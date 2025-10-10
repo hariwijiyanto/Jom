@@ -157,7 +157,7 @@ def main():
 
     print("[*] Memuat dan mengkompilasi kernel CUDA...")
     try:
-        with open('step2.cu', 'r') as f:
+        with open('main.cu', 'r') as f:
             full_cuda_code = f.read()
     except FileNotFoundError:
         print("[!] FATAL: File 'step.cu' tidak ditemukan.")
