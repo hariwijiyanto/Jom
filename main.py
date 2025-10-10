@@ -357,6 +357,8 @@ def main():
             else:
                 # Tidak ditemukan di start scalar ini, lanjut ke berikutnya
                 print(f"\n[*] Tidak ditemukan di start scalar {hex(current_start)}, melanjutkan ke {hex(current_start-1)}")
+                print("[!] Jeda untuk mengurangi beban ")
+                time.sleep(15)
                 current_start -= 1
 
         # Handle final results
