@@ -336,7 +336,7 @@ class GPUWorker(threading.Thread):
 
                 else:
                     # Tidak ditemukan di start scalar ini, lanjut ke berikutnya
-                    current_start -= 2  # Loncat 2 karena pembagian genap/ganjil
+                    current_start += 2  # Loncat 2 karena pembagian genap/ganjil
                     start_scalars_tried += 1
 
                     if start_scalars_tried % 10 == 0:  # Beri jeda setiap 10 start scalar
