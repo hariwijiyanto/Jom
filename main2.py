@@ -340,7 +340,7 @@ class GPUWorker(threading.Thread):
                     start_scalars_tried += 1
 
                     if start_scalars_tried % 10 == 0:  # Beri jeda setiap 10 start scalar
-                        time.sleep(5)
+                        time.sleep(0)
 
             # Cleanup
             d_target_pubkeys.free()
